@@ -1,12 +1,209 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+      <a class="page-header__logo">
+        <img  src="img/pink.svg" width="74" height="23" alt="PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="site-list__item">
+              <a href="#">ГЛАВНАЯ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">ФОТОГРАФИИ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">КОНКУРС</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+        <section class="download">
+          <div class="download__wrapper">
+            <h2 class="download__title">Взгляни на жизнь иначе!</h2>
+            <a href="#" class="button button--download">Скачать приложение</a>
+            <ul class="download__list">
+              <li class="download__item">
+                <a class="download__link" href="#" title="Apple Store"><img src="img/apple-logo.svg" alt="Apple" width="47" height="56"></a>
+              </li>
+              <li class="download__item">
+                <a class="download__link" href="#" title="Google Play"><img src="img/android-logo.svg" alt="Android" width="43" height="47"></a>
+              </li>
+              <li class="download__item">
+                <a class="download__link" href="#" title="Microsoft Store"><img src="img/microsoft-logo.svg" alt="Microsoft" width="44" height="41"></a>
+              </li>
+            </ul>
+            <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </section>
+        <section class="information">
+            <h2 class="information__title">
+              <span>Устали от серости мегаполиса?</span>
+              <span>Нам есть что вам предложить!</span>
+            </h2>
+            <div class="information__offer">
+              <ul class="offer__list">
+                <li class="offer__item">
+                  <h3 class="offer">Поднимает настроение</h3>
+                  <p class="offer-discription">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="offer-item">
+                  <h3 class="offer">Меняет мир вокруг</h3>
+                  <p class="offer-discription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="offer-item">
+                  <h3 class="offer">Заводит новых друзей</h3>
+                  <p class="offer-discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+            </div>
+        </section>
+        <section class="reviews">
+          <h2 class="visually-hidden">Отзывы пользователей</h2>
+            <div class="reviews-wrapper">
+              <blockquote class="review reviev--active">
+                <cite class="review__autor">
+                  "Николай Петров"
+                  <span>25 лет,водитель трамвая</span>
+                  <cite class="review__content">
+                    "«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»"
+                  </cite>
+                </cite>
+              </blockquote>
+              <blockquote class="review">
+                <cite class="review__autor">
+                  "Lorem ipsum"
+                  <span>Lorem ipsum dolor sit</span>
+                  <cite class="review__content">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  </cite>
+                </cite>
+              </blockquote>
+              <blockquote class="review">
+                <cite class="review__autor">
+                  "Lorem ipsum"
+                  <span>Lorem ipsum dolor sit</span>
+                  <cite class="review__content">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  </cite>
+                </cite>
+              </blockquote>
+            </div>
+            <div class="toggle toggle--review">
+              <button class="toggle__item toggle__item--active" type="button"></button>
+              <button class="toggle__item" type="button"></button>
+              <button class="toggle__item" type="button"></button>
+            </div>
+        </section>
+        <section class="price">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <div class="price-wrapper price-slider">
+            <table class="price-table">
+              <tbody>
+                <tr class="price-table__row">
+                  <th class="price-table__head"></th>
+                  <th class="price-table__head">
+                    <span class="price-table__title">БАЗА</span>
+                    <span class="price-table__full">1,99 USD</span>
+                  </th>
+                  <th class="price-table__head price-table__head--hit">
+                    <span class="price-table__title">СТАНДАРТ</span>
+                    <span class="price-table__full">3,99 USD</span>
+                  </th>
+                  <th class="price-table__head">
+                    <span class="price-table__title">АНЛИМ</span>
+                    <span class="price-table__full">9,99 USD</span>
+                  </th>
+                </tr>
+                <tr class="price-table__row">
+                  <th class="price-table__cell">Розовый фильтр</th>
+                  <td class="price-table__cell price-table__cell--ok">v</td>
+                  <td class="price-table__cell price-table__cell--ok">v</td>
+                  <td class="price-table__cell price-table__cell--ok">v</td>
+                </tr>
+                <tr class="price-table__row">
+                  <th class="price-table__cell">Смайлики</th>
+                  <td class="price-table__cell price-table__cell--no">x</td>
+                  <td class="price-table__cell price-table__cell--ok">v</td>
+                  <td class="price-table__cell price-table__cell--ok">v</td>
+                </tr>
+                <tr class="price-table__row">
+                  <th class="price-table__cell">Комментарии</th>
+                  <td class="price-table__cell price-table__cell--no">x</td>
+                  <td class="price-table__cell price-table__cell--no">x</td>
+                  <td class="price-table__cell price-table__cell--ok">v</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="toggle toggle--table">
+            <button class="toggle__item" type="button"></button>
+            <button class="toggle__item toggle__item--active" type="button"></button>
+            <button class="toggle__item" type="button"></button>
+          </div>
+        </section>
+        <section class="contacts">
+          <h2 class="contacts__title">
+            <span>Остались вопросы?</span>
+            <span>Свяжитесь с нами</span>
+          </h2>
+          <div class="contacts__wrapper">
+            <div class="contacts-item contacts-item--call">
+              <h3 class="contacts-item__title">Звоните:</h3>
+              <div class="contacts-item__content">
+              <a href="tel:+7812555666">+7 (812) 555-66-66</a>
+              </div>
+            </div>
+            <div class="contacts-item contacts-item--write">
+              <h3 class="contacts-item__title">Пишите:</h3>
+              <div class="contacts-item__content">
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>
+            </div>
+            <div class="contacts-item contacts-item--come">
+              <h3 class="contacts-item__title">Приезжайте в гости:</h3>
+              <div class="contacts-item__content">
+                <p>ул. Большая</p>
+                <p>Конюшенная, 19/8</p>
+              </div>
+            </div>
+            <div class="contacts__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sit!2sru!4v1482689709674" width="600" height="200" style="border:0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logotype-blue-tablet.svg" alt="Logo Pink" width="145" height="40">
+        </div>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list-linki--Twitter" href="#">1</a>
+            <a class="social-list__link social-list-linki--Facebook" href="#">2</a>
+            <a class="social-list__link social-list-linki--Youtube" href="#">3</a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <span>Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/" title="HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
   </body>
 </html>
