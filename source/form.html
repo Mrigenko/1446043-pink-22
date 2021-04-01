@@ -40,19 +40,19 @@
       <section class="form">
         <div class="form__wrapper">
           <h3 class="form__massage">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h3>
-           <form class="form__group" action="post">
+           <form class="form__group" action="http://echo.htmlacademy.ru" name="Form" method="POST">
              <fieldset class="form__user">
                <div class="form__surname" >
                  <label class="form__label"  for="surname">ФАМИЛИЯ:</label>
-                 <input class="form__field"  type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
+                 <input class="form__field"  type="text" id="surname" name="Фамилия" placeholder="Укажите фамилию*" required>
                </div>
                <div class="form__name">
                  <label class="form__label" for="name">ИМЯ:</label>
-                 <input class="form__field" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+                 <input class="form__field" type="text" id="name" name="Имя" placeholder="Введите ваше имя*" required>
                </div>
                <div class="form__patronymic">
                  <label class="form__label" for="patronymic">ОТЧЕСТВО:</label>
-                 <input class="form__field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+                 <input class="form__field" type="text" id="patronymic" name="Отчество" placeholder="Ну и отчество тоже">
                </div>
              </fieldset>
                <fieldset class="form__travel">
@@ -60,27 +60,27 @@
                   достижения в путешествии</legend>
                   <ul class="form__legend-list">
                     <li class="form__legend-item">
-                      <input class="form__checkbox-legend" type="checkbox" name="progress" id="progress-1" checked>
+                      <input class="form__checkbox-legend" type="checkbox" name="Сделал селфи с акулой" id="progress-1" checked>
                       <label class="form__label-legend" for="progress-1">Сделал селфи с акулой</label>
                     </li>
                     <li class="form__legend-item">
-                      <input class="form__checkbox-legend" type="checkbox" name="progress" id="progress-2" checked>
+                      <input class="form__checkbox-legend" type="checkbox" name=">Обгорел на пляже" id="progress-2" checked>
                       <label class="form__label-legend" for="progress-2">Обгорел на пляже</label>
                     </li>
                     <li class="form__legend-item">
-                      <input class="form__checkbox-legend" type="checkbox" name="progress" id="progress-3">
+                      <input class="form__checkbox-legend" type="checkbox" name="Видел Чака Норриса" id="progress-3">
                       <label class="form__label-legend" for="progress-3">Видел Чака Норриса</label>
                     </li>
                     <li class="form__legend-item">
-                      <input class="form__checkbox-legend" type="checkbox" name="progress" id="progress-4">
+                      <input class="form__checkbox-legend" type="checkbox" name="Накупил сувениров" id="progress-4">
                       <label class="form__label-legend" for="progress-4">Накупил сувениров</label>
                     </li>
                     <li class="form__legend-item">
-                      <input class="form__checkbox-legend" type="checkbox" name="progress" id="progress-5" checked>
+                      <input class="form__checkbox-legend" type="checkbox" name="Удержал башню" id="progress-5" checked>
                       <label class="form__label-legend" for="progress-5">Удержал башню</label>
                     </li>
                     <li class="form__legend-item">
-                      <input class="form__checkbox-legend" type="checkbox" name="progress" id="progress-6">
+                      <input class="form__checkbox-legend" type="checkbox" name="Разгромил отель" id="progress-6">
                       <label class="form__label-legend" for="progress-6">Разгромил отель</label>
                     </li>
                   </ul>
@@ -88,11 +88,11 @@
                <fieldset class="form__contacts">
                  <div class="form__tel">
                    <label class="form__tel-label" for="fone" >НОМЕР ТЕЛЕФОНА</label>
-                   <input class="form__tel-number" type="tel" name="fone" id="fone" placeholder="Номер, пожалуйста">
+                   <input class="form__tel-number" type="tel" name="Номер телефона" id="fone" placeholder="Номер, пожалуйста">
                  </div>
                  <div class="form__mail">
                   <label class="form__mail-label" for="adress" >АДРЕС ПОЧТЫ</label>
-                  <input class="form__mail-adress" type="email" name="adress" id="adress" placeholder="Введите почту*" required>
+                  <input class="form__mail-adress" type="email" name="E-mail" id="adress" placeholder="Введите почту*" required>
                 </div>
                </fieldset>
                <fieldset class="form__applications">
@@ -100,22 +100,22 @@
                   путешествовали?</legend>
                  <ul class="form__applications-list">
                    <li class="form__applications-item">
-                     <input type="checkbox" name="applications" id="applications-1" checked>
+                     <input type="checkbox" name="Приложение" id="applications-1" checked>
                      <label class="form__applications-label" for="applications-1">Pink для IOS</label>
                    </li>
                    <li class="form__applications-item">
-                    <input type="checkbox" name="applications" id="applications-2">
+                    <input type="checkbox" name="Приложение" id="applications-2">
                     <label class="form__applications-label" for="applications-2">Pink для Android</label>
                    </li>
                    <li class="form__applications-item">
-                    <input type="checkbox" name="applications" id="applications-3">
+                    <input type="checkbox" name="Приложение" id="applications-3">
                     <label class="form__applications-label" for="applications-3">Windows Phone</label>
                    </li>
                  </ul>
                </fieldset>
                <fieldset class="form__emotions">
                  <legend class="form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-                 <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                 <textarea class="form__textarea" name="Эмоции" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                </fieldset>
                <button class="form__button" type="submit">Отправить форму</button>
                <span class="form__required-fields">* — обязательные поля</span>
@@ -145,5 +145,16 @@
         </div>
       </div>
     </footer>
+   <!--  <div class="popup-error">
+      <h3 class="popup-error__title">Что-то пошло не так!</h3>
+      <span class="popup-error__span">Проверьте поля, выделенные красным, скорее исего вы забыли их заполнить</span>
+      <button class="popup-error__button" type="button">OK</button>
+    </div>
+    <div class="popup-push">
+      <h3 class="popup-push__title">Ваша заявка отправлена</h3>
+      <span class="popup-push__span">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</span>
+      <button class="popup-push__button" type="button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  -->
   </body>
   </html>
