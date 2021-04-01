@@ -43,12 +43,12 @@
            <form class="form__group" action="#">
              <fieldset class="form__user">
                <div class="form__surname" >
-                 <label class="form__label" for="surname">ФАМИЛИЯ:</label>
-                 <input class="form__field"  type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+                 <label class="form__label"  for="surname">ФАМИЛИЯ:</label>
+                 <input class="form__field"  type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
                </div>
                <div class="form__name">
                  <label class="form__label" for="name">ИМЯ:</label>
-                 <input class="form__field" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+                 <input class="form__field" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
                </div>
                <div class="form__patronymic">
                  <label class="form__label" for="patronymic">ОТЧЕСТВО:</label>
@@ -92,7 +92,7 @@
                  </div>
                  <div class="form__mail">
                   <label class="form__mail-label" for="adress" >АДРЕС ПОЧТЫ</label>
-                  <input class="form__mail-adress" type="email" name="adress" id="adress" placeholder="Введите почту*">
+                  <input class="form__mail-adress" type="email" name="adress" id="adress" placeholder="Введите почту*" required>
                 </div>
                </fieldset>
                <fieldset class="form__applications">
@@ -117,7 +117,7 @@
                  <legend class="form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
                  <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                </fieldset>
-               <button class="form__button" type="submit">Отправить форму</button>
+               <button class="form__button" type="button">Отправить форму</button>
                <span class="form__required-fields">* — обязательные поля</span>
            </form>
         </div>
