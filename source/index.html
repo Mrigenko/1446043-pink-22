@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" >
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
@@ -78,7 +79,7 @@
                 <li class="reviews__item">
                   <blockquote class="reviews__autor">
                     "Николай Петров"
-                    <span>25 лет, водитель трамвая</span>
+                    <span class="visually-hidden">25 лет, водитель трамвая</span>
                     <cite class="reviews__content">
                       "«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»"
                     </cite>
@@ -87,7 +88,7 @@
                 <li class="reviews__item">
                   <blockquote class="reviews__autor">
                     "Василий Николаев"
-                    <span>55 лет, водитель маршрутки</span>
+                    <span class="visually-hidden">55 лет, водитель маршрутки</span>
                     <cite class="reviews__content">
                       "«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»"
                     </cite>
@@ -96,15 +97,15 @@
                 <li class="reviews__item">
                   <blockquote class="reviews__autor">
                     "Николай Васильев"
-                    <span>13 лет, школьник</span>
+                    <span class="visually-hidden">13 лет, школьник</span>
                     <cite class="reviews__content">
                       "«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»"
                     </cite>
                   </blockquote>
                 </li>
               </ul>
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
+              <button class="reviews__prev visually-hidden" type="button">Предыдущий отзыв</button>
+              <button class="reviews__next visually-hidden" type="button">Следующий отзыв</button>
             </div>
             <div class="toggle toggle--reviews">
               <button class="toggle__item toggle__item--active" type="button">1</button>
@@ -166,11 +167,11 @@
           </h2>
           <div class="contacts__wrapper">
             <div class="contacts__item">
-              <h3 class="contacts___item-call">Звоните:</h3>
-              <a class="contacts___item-content" href="tel:+7812555666">+7 (812) 555-66-66</a>
+              <h3 class="contacts__item-title">Звоните:</h3>
+              <a class="contacts__item-content" href="tel:+7812555666">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts__item">
-              <h3 class="contacts___item-call">Пишите:</h3>
+              <h3 class="contacts__item-title">Пишите:</h3>
               <a class="contacts__item-content" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
           </div>
