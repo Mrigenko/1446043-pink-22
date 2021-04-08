@@ -2,27 +2,28 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link href="css/style.css" rel="stylesheet" >
   <title>HTML Academy PINK--form</title>
 </head>
-<body class="page">
+<body class="page__body">
   <header class="page-header">
-    <a href="index.html" title="PINK">
-      <img src="img/pink.svg" width="74" height="23" alt="PINK"></a>
     <h1 class="visually-hidden">Мобильное приложение Pink - конкурс</h1>
-    <nav class="page-header__nav">
-      <button class="page-header__logo" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="page-header__wrapper">
-        <ul class="page-header__list">
-          <li class="page-header__item">
+    <a class="page-header__logo" href="index.html" title="PINK">
+      <img src="img/pink.svg" width="74" height="23" alt="PINK"></a>
+    <nav class="main__nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
             <a href="index.html">ГЛАВНАЯ</a>
           </li>
-          <li class="page-header__item">
+          <li class="main-nav__item">
             <a href="catalog.html">ФОТОГРАФИИ</a>
           </li>
-          <li class="page-header__item page-header__item--active">
+          <li class="main-nav__item page-header__item--active">
             <a href="#">КОНКУРС</a>
           </li>
-          <li class="page-header__item">
+          <li class="main-nav__item">
             <a href="#">HTML ACADEMY</a>
           </li>
         </ul>
@@ -32,7 +33,7 @@
   <main class="page-main">
     <section class="download">
       <div class="download__wrapper">
-        <h2 class="download__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h2 class="download__title-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </section>
     <section class="form">
@@ -121,8 +122,8 @@
             <textarea class="form__textarea" name="Эмоции" id="emotions" cols="30" rows="10"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="form__button" type="submit">Отправить форму</button>
-          <span class="form__required-fields">* — обязательные поля</span>
+          <button class="form__button-form" type="submit">Отправить форму</button>
+          <span class="form__note"><span class="form__note-symbol">*</span> — обязательные поля</span>
         </form>
       </div>
     </section>
@@ -144,12 +145,12 @@
         </li>
       </ul>
       <div class="copyright">
-        <span>Разработано</span>
+        <span class="copyright-note">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/" title="HTML Academy"></a>
       </div>
     </div>
   </footer>
-  <!--<div class="popup-error">
+  <div class="popup-error visually-hidden">
       <h3 class="popup-error__title">Что-то пошло не так!</h3>
       <span class="popup-error__span">Проверьте поля, выделенные красным, скорее исего вы забыли их заполнить</span>
       <button class="popup-error__button" type="button">OK</button>
@@ -159,6 +160,5 @@
       <span class="popup-push__span">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</span>
       <button class="popup-push__button" type="button">ЗАКРЫТЬ ОКНО</button>
     </div>
-  -->
 </body>
 </html>
