@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link href="css/style.css" rel="style sheet">
   <title>HTML Academy PINK--catalog</title>
 </head>
 
@@ -63,8 +64,8 @@
           </div>
         </div>
       </article>
-      <div class="photo-gallery">
-        <article class="photo-gallery__list">
+      <ul class="photo-gallery__list">
+        <li class="photo-gallery__item">
           <a href="#">
             <picture>
               <img src="#" alt="Левон">
@@ -78,8 +79,8 @@
             <button class="photo-gallery__button" type="button"><span class="visually-hidden">Like</span></button>
             <a class="photo-gallery__rating" href="#">Нравится: 356</a>
           </div>
-        </article>
-        <article class="photo-gallery__list">
+        </li>
+        <li class="photo-gallery__item">
           <a href="#">
             <picture>
               <img src="#" alt="Антон">
@@ -92,8 +93,8 @@
             <button class="photo-gallery__button" type="button"><span class="visually-hidden">Like</span></button>
             <a class="photo-gallery__rating" href="#">Нравится: 666</a>
           </div>
-        </article>
-        <article class="photo-gallery__list">
+        </li>
+        <li class="photo-gallery__item">
           <a href="#">
             <picture>
               <img src="#" alt="Борис">
@@ -106,8 +107,8 @@
             <button class="photo-gallery__button" type="button"><span class="visually-hidden">Like</span></button>
             <a class="photo-gallery__rating" href="#">Нравится: 215</a>
           </div>
-        </article>
-        <article class="photo-gallery__list">
+        </li>
+        <li class="photo-gallery__item">
           <a href="#">
             <picture>
               <img src="#" alt="Сергей">
@@ -120,8 +121,8 @@
             <button class="photo-gallery__button" type="button"><span class="visually-hidden">Like</span></button>
             <a class="photo-gallery__rating" href="#">Нравится: 4</a>
           </div>
-        </article>
-        <article class="photo-gallery__list">
+        </li>
+        <li class="photo-gallery__item">
           <a href="#">
             <picture>
               <img src="#" alt="Максим">
@@ -134,8 +135,8 @@
             <button class="photo-gallery__button" type="button"><span class="visually-hidden">Like</span></button>
             <a class="photo-gallery__rating" href="#">Нравится: 150</a>
           </div>
-        </article>
-        <article class="photo-gallery__list">
+        </li>
+        <li class="photo-gallery__item">
           <a href="#">
             <picture>
               <img src="#" alt="Надежда">
@@ -148,8 +149,9 @@
             <button class="photo-gallery__button" type="button"><span class="visually-hidden">Like</span></button>
             <a class="photo-gallery__rating" href="#">Нравится: 2560</a>
           </div>
-        </article>
-        <article class="creat-newpost">
+        </li>
+      </ul>
+        <section class="creat-newpost">
           <h3 class="creat-newpost__title">
             Затмите их всех!
             Выкладывайте все, что накопилось в телефоне!
@@ -159,15 +161,13 @@
               <picture>
                 <img src="#" alt="Добавить фото">
               </picture>
-              <input class="form-newpost__file" type="file">
               <div class="form-newpost__filter">
                 <ul class="form-newpost__image-list">
                   <li class="form-newpost__image-crop form-newpost__image-crop--active">
                     <img src="#" alt="Изменить размер изображения">
                     <div class="form-newpost__range-controls">
                       <div class="form-newpost__scale-crop">
-                        <div class="form-newpost__bar-crop" style="width: 100%; margin-left: 20%"></div>
-                        <div class="toggle toggle-max" tabindex="0" style="left:80%"></div>
+                        <div class="form-newpost__bar-crop"></div>
                       </div>
                     </div>
                   </li>
@@ -175,8 +175,7 @@
                     <img src="#" alt="Изменить заливку изображения">
                     <div class="form-newpost__range-controls">
                       <div class="form-newpost__scale-fill">
-                        <div class="form-newpost__bar-fill" style="width: 100%; margin-left: 85%"></div>
-                        <div class="toggle toggle-max" tabindex="0" style="left: 15%"></div>
+                        <div class="form-newpost__bar-fill"></div>
                       </div>
                     </div>
                   </li>
@@ -184,8 +183,7 @@
                     <img src="#" alt="Изменить контрастность изображения">
                     <div class="form-newpost__range-controls">
                       <div class="form-newpost__scale-contrast">
-                        <div class="form-newpost__bar-contrast" style="width: 100%; margin-left: 50%"></div>
-                        <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                        <div class="form-newpost__bar-contrast"></div>
                       </div>
                     </div>
                   </li>
@@ -195,8 +193,8 @@
               </div>
             </form>
           </div>
-        </article>
-      </div>
+        </section>
+
     </section>
   </main>
   <footer class="page-footer">
@@ -220,6 +218,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/" title="HTML Academy"></a>
       </div>
     </div>
+
   </footer>
 </body>
 
