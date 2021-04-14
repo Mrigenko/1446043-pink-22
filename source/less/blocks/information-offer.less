@@ -1,11 +1,31 @@
 .information-offer {
   background-color: @color-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .information-offer__list {
+  text-align: center;
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .information-offer__title {
@@ -19,4 +39,27 @@
   font-size: 14px;
   line-height: 24px;
   color: @color-blue;
+}
+
+.information-offer__mobile {
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.information-offer__mobile-1 {
+  width: 157px;
+  height: 320px;
+}
+
+.information-offer__mobile-2--visually-hidden,
+.information-offer__mobile-3--visually-hidden {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

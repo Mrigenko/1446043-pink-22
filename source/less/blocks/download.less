@@ -1,8 +1,15 @@
 .download {
   background-color: @color-dark-blue;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .download__title {
+  text-align: center;
   color: @color-white;
   font-weight: 300;
   font-size: 24px;
@@ -13,9 +20,33 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.download__button {
+  text-align: center;
+}
+
+.download__wrapper {
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .download__wrapper p {
+  text-align: center;
+  color: @color-white;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.download__wrapper a {
+  text-decoration: none;
   color: @color-white;
   font-weight: 300;
   font-size: 18px;
@@ -27,4 +58,9 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+}
+
+.download__link {
+  text-align: center;
+  display: block;
 }

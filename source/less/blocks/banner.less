@@ -1,0 +1,40 @@
+.banner {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
+
+.banner-title {
+  font-weight: 700;
+  color: @color-black;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.banner-cite {
+  display: grid;
+}
+
+.banner-content {
+  font-weight: 400;
+  color: @color-blue;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.banner__link {
+  display: block;
+}
+
+.banner__picture {
+  margin: auto;
+}
