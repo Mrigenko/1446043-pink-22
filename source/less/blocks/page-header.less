@@ -5,10 +5,25 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @media (min-width: @tablet-width) {
+    height: 729px;
+    background-image: url("../../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 
   @media (min-width: @desktop-width) {
+    height: 853px;
     display: flex;
     flex-direction: row;
+    background-image: url("../../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
   }
 }
 

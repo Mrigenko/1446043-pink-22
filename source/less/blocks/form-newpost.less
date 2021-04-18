@@ -1,3 +1,36 @@
+.form-newpost__filter {
+  display: grid;
+}
+
+.form-newpost {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-newpost__image-list {
+  list-style: none;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.form-newpost__button-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 .form-newpost__button--submit {
   color: @color-red;
   font-weight: 700;
