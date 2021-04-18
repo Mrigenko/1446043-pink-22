@@ -1,6 +1,96 @@
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 940px;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 940px;
+  }
+}
+
+.form__user {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
+.form__travel {
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+}
+
+.form__contacts {
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+}
+
+.form__applications {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.form__emotions {
+  @media (min-width: @tablet-width) {
+    order: 5;
+    min-width: 618px;
+  }
+}
+
+.form__pointers {
+  @media (min-width: @tablet-width) {
+    order: 6;
+  }
+}
+
+.form__surname,
+.form__name,
+.form__patronymic {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form__tel,
+.form__mail {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form__tel-label {
+    order: 2;
+  }
+
+  .form__tel-number {
+    order: 1;
+  }
+
+  .form__mail-label {
+    order: 2;
+  }
+
+  .form__mail-adress {
+    order: 1;
+  }
+}
+
 .form__massage {
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }
 
 .form__label {
@@ -21,14 +111,12 @@
   list-style: none;
 }
 
-.form__travel {
-  background-color: @color-grey;
-}
-
 .form__legend {
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @color-red;
+  text-transform: uppercase;
 }
 
 .form__label-legend {
@@ -63,15 +151,12 @@
   line-height: 30px;
 }
 
-.form__applications {
-  background-color: @color-grey;
-}
-
 .form__title {
   color: @color-red;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__applications-list {
@@ -90,6 +175,7 @@
   font-size: 18px;
   line-height: 30px;
   color: @color-blue;
+  max-width: 276px;
 }
 
 .form__button-form {
@@ -110,4 +196,17 @@
 
 .form__note-symbol {
   color: @color-red;
+}
+
+.form__title--visually-hidden {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    text-align: center;
+    color: @color-red;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
 }
