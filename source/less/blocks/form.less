@@ -18,17 +18,29 @@
   @media (min-width: @tablet-width) {
     order: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 431px;
+  }
 }
 
 .form__travel {
   @media (min-width: @tablet-width) {
     order: 4;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 936px;
+  }
 }
 
 .form__contacts {
   @media (min-width: @tablet-width) {
     order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 936px;
   }
 }
 
@@ -39,15 +51,54 @@
 }
 
 .form__emotions {
+  display: flex;
+  justify-content: center;
+
   @media (min-width: @tablet-width) {
     order: 5;
-    min-width: 618px;
+    min-width: 616px;
+    padding-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 5;
+    min-width: 936px;
+    min-height: 213px;
+    padding-top: 44px;
+  }
+}
+
+.form__textarea {
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-blue;
+  min-width: 276px;
+  max-height: 197px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 496px;
+    max-height: 189px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 816px;
+    max-height: 124px;
   }
 }
 
 .form__pointers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 940px;
   }
 }
 
@@ -62,26 +113,34 @@
   }
 }
 
-.form__tel,
+.form__tel {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .form__mail {
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: @tablet-width) {
-  .form__tel-label {
+.form__tel-label {
+  color: @color-red;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
     order: 2;
   }
+}
 
-  .form__tel-number {
-    order: 1;
-  }
+.form__tel-number {
+  color: @color-blue;
+  font-size: 18px;
+  line-height: 30px;
 
-  .form__mail-label {
-    order: 2;
-  }
-
-  .form__mail-adress {
+  @media (min-width: @tablet-width) {
     order: 1;
   }
 }
@@ -109,6 +168,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .form__legend {
@@ -119,23 +183,19 @@
   text-transform: uppercase;
 }
 
+.form__legend-item {
+  @media (min-width: @desktop-width) {
+    display: block;
+    box-sizing: border-box;
+    min-width: 240px;
+    min-height: 35px;
+  }
+}
+
 .form__label-legend {
   font-size: 18px;
   line-height: 30px;
   color: @color-blue;
-}
-
-.form__tel-label {
-  color: @color-red;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.form__tel-number {
-  color: @color-blue;
-  font-size: 18px;
-  line-height: 30px;
 }
 
 .form__mail-label {
@@ -143,12 +203,20 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .form__mail-adress {
   color: @color-blue;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }
 
 .form__title {
@@ -157,6 +225,10 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    min-width: 431px;
+  }
 }
 
 .form__applications-list {
@@ -171,13 +243,6 @@
   line-height: 30px;
 }
 
-.form__textarea {
-  font-size: 18px;
-  line-height: 30px;
-  color: @color-blue;
-  max-width: 276px;
-}
-
 .form__button-form {
   background-color: @color-green;
   color: @color-white;
@@ -185,6 +250,15 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  align-self: stretch;
+  min-height: 59px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    box-sizing: border-box;
+    min-height: 59px;
+    min-width: 296px;
+  }
 }
 
 .form__note {
@@ -208,5 +282,12 @@
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+  }
+}
+
+.form__contacts-container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
