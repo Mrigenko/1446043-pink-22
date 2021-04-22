@@ -1,11 +1,25 @@
 .photo-gallery {
   background-color: @color-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .photo-gallery__list {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .photo-gallery__user {
@@ -34,4 +48,9 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.photo-gallery__foto-1 {
+  width: 280px;
+  height: 180px;
 }

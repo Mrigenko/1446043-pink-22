@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet" >
   <title>HTML Academy PINK--form</title>
 </head>
@@ -31,9 +32,9 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="download">
-      <div class="download__wrapper">
-        <h2 class="download__title-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    <section class="download-form">
+      <div class="download-form__wrapper">
+        <h2 class="download-form__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </section>
     <section class="form">
@@ -88,15 +89,17 @@
             </ul>
           </fieldset>
           <fieldset class="form__contacts">
-            <div class="form__tel">
-              <label class="form__tel-label" for="fone">НОМЕР ТЕЛЕФОНА</label>
-              <input class="form__tel-number" type="tel" name="Номер телефона" id="fone"
-                placeholder="Номер, пожалуйста">
-            </div>
-            <div class="form__mail">
-              <label class="form__mail-label" for="adress">АДРЕС ПОЧТЫ</label>
-              <input class="form__mail-adress" type="email" name="E-mail" id="adress" placeholder="Введите почту*"
-                required>
+            <legend class="form__contacts-title">Контактная информация</legend>
+            <div class="form__contacts-container">
+              <div class="form__tel">
+                <label class="form__tel-label" for="fone">НОМЕР ТЕЛЕФОНА</label>
+                <input class="form__tel-number" type="tel" name="Номер телефона" id="fone"
+                  placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__mail">
+                <label class="form__mail-label" for="adress">АДРЕС ПОЧТЫ</label>
+                <input class="form__mail-adress" type="email" name="E-mail" id="adress" placeholder="Введите почту*" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__applications">
@@ -122,8 +125,10 @@
             <textarea class="form__textarea" name="Эмоции" id="emotions" cols="30" rows="10"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="form__button-form" type="submit">Отправить форму</button>
-          <span class="form__note"><span class="form__note-symbol">*</span> — обязательные поля</span>
+          <div class="form__pointers">
+            <button class="form__button-form" type="submit">Отправить форму</button>
+            <span class="form__note"><span class="form__note-symbol">*</span> — обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
@@ -150,7 +155,7 @@
       </div>
     </div>
   </footer>
-  <div class="popup-error">
+    <div class="popup-error">
       <h3 class="popup-error__title">Что-то пошло не так!</h3>
       <span class="popup-error__span">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
       <button class="popup-error__button" type="button">OK</button>
@@ -158,7 +163,10 @@
     <div class="popup-push">
       <h3 class="popup-push__title">Ваша заявка отправлена</h3>
       <span class="popup-push__span">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</span>
-      <button class="popup-push__button" type="button">ЗАКРЫТЬ ОКНО</button>
+      <div class="popup-push__wrapper">
+        <button class="popup-push__button" type="button">ЗАКРЫТЬ ОКНО</button>
+      </div>
+
     </div>
 </body>
 </html>
