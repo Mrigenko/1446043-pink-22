@@ -1,17 +1,20 @@
 
 .page-header {
   margin: 0 auto;
-  min-height: 462px;
+  min-height: 733px;
   background-color: @color-blue;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   text-align: center;
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50% -50px;
   background-size: cover;
 
+
   @media (min-width: @tablet-width) {
+    justify-content: flex-end;
     min-height: 729px;
     background-image: url("../../img/back-tablet.jpg");
     background-repeat: no-repeat;
@@ -29,17 +32,14 @@
   }
 }
 
-.page-header__logo {
-  width: 74px;
-  height: 23px;
+.page-header__title {
+  padding-top: 120px;
+  color: @color-white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
 
   @media (min-width: @tablet-width) {
-    width: 145px;
-    height: 40px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 147px;
-    height: 40px;
+    display: none;
   }
 }
