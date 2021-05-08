@@ -7,44 +7,44 @@
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy PINK--catalog</title>
 </head>
-
 <body class="page__body">
-  <header class="page-header">
-    <h1 class="visually-hidden">Мобильное приложение Pink-фотографии</h1>
-    <a class="page-header__logo" title="PINK">
-      <img src="img/pink.svg" width="74" height="23" alt="PINK">
-    </a>
-    <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <div class="main-nav__head">
+      <a class="main-nav__logo" title="PINK">
+        <svg class="main-nav__logo-pink" width="74" height="23"><use href="./img/sprite.svg#pink"></use></svg>
+        <svg class="main-nav__logo-pinktablet" width="145" height="40"><use href="./img/sprite.svg#pink-tablet"></use></svg>
+        <svg class="main-nav__logo-pinkdesktop" width="147" height="40"><use href="./img/sprite.svg#pink-desktop"></use></svg>
+      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">ГЛАВНАЯ</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="#">ФОТОГРАФИИ</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">КОНКУРС</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">HTML ACADEMY</a>
-          </li>
-        </ul>
-      </div>
+    </div>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="#">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
     </nav>
+  <header class="header-catalog">
+      <h2 class="header-catalog__title">Фотографии пользователей</h2>
   </header>
   <main class="page-main">
-    <section class="page-photo">
-      <h2 class="page-photo__title">Фотографии пользователей</h2>
-    </section>
     <section class="photo-panorama">
       <h2 class="photo-panorama__title">
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
       <article class="photo-panorama__photo-day">
         <a href="#">
           <picture>
-            <img class="photo-panorama__photo" src="./img/panorama-mobile.jpg" alt="Навесной мост над рекой" width="320px" height="137px">
+            <img class="photo-panorama__photo" src="./img/panorama-mobile.jpg" alt="Навесной мост над рекой" width="320" height="137">
           </picture>
           <span class="photo-panorama__marker">
             Панорама дня
@@ -221,8 +221,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/" title="HTML Academy"></a>
       </div>
     </div>
-
   </footer>
+  <script src="./js/script.js"></script>
 </body>
-
 </html>

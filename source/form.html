@@ -7,36 +7,37 @@
   <title>HTML Academy PINK--form</title>
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <h1 class="visually-hidden">Мобильное приложение Pink - конкурс</h1>
-    <a class="page-header__logo" href="index.html" title="PINK">
-      <img src="img/pink.svg" width="74" height="23" alt="PINK"></a>
-    <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <div class="main-nav__head">
+      <a class="main-nav__logo" title="PINK">
+        <svg class="main-nav__logo-pink" width="74" height="23"><use href="./img/sprite.svg#pink"></use></svg>
+        <svg class="main-nav__logo-pinktablet" width="145" height="40"><use href="./img/sprite.svg#pink-tablet"></use></svg>
+        <svg class="main-nav__logo-pinkdesktop" width="147" height="40"><use href="./img/sprite.svg#pink-desktop"></use></svg>
+      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">ГЛАВНАЯ</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">ФОТОГРАФИИ</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="#">КОНКУРС</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">HTML ACADEMY</a>
-          </li>
-        </ul>
-      </div>
+    </div>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="./catalog.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="#">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
     </nav>
+  <header class="header-form">
+    <h1 class="visually-hidden">Мобильное приложение Pink - конкурс</h1>
+    <h2 class="header-form__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
   </header>
   <main class="page-main">
-    <section class="download-form">
-      <div class="download-form__wrapper">
-        <h2 class="download-form__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      </div>
-    </section>
     <section class="form">
       <div class="form__wrapper">
         <h3 class="form__massage">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
@@ -166,7 +167,7 @@
       <div class="popup-push__wrapper">
         <button class="popup-push__button" type="button">ЗАКРЫТЬ ОКНО</button>
       </div>
-
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

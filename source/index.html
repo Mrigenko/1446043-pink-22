@@ -7,50 +7,55 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__head">
+        <a class="main-nav__logo" title="PINK">
+          <svg class="main-nav__logo-pink" width="74" height="23"><use href="./img/sprite.svg#pink"></use></svg>
+          <svg class="main-nav__logo-pinktablet" width="145" height="40"><use href="./img/sprite.svg#pink-tablet"></use></svg>
+          <svg class="main-nav__logo-pinkdesktop" width="147" height="40"><use href="./img/sprite.svg#pink-desktop"></use></svg>
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
     <header class="page-header">
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
-      <a class="page-header__logo" title="PINK">
-        <img  src="img/pink.svg" width="74" height="23" alt="PINK">
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">X<span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a href="#">ГЛАВНАЯ</a>
+      <h2 class="page-header__title">Взгляните на жизнь<br>иначе!</h2>
+      <section class="page-download">
+        <div class="page-download__wrapper">
+          <h2 class="page-download__title">Взгляните на жизнь иначе!</h2>
+          <a href="#" class="button page-download__button">Скачать приложение</a>
+          <ul class="page-download__list">
+            <li class="page-download__item">
+              <a class="page-download__link" href="#" title="Apple Store"><img src="img/apple-logo.svg" alt="Apple" width="47" height="56" title="Apple"></a>
             </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">ФОТОГРАФИИ</a>
+            <li class="page-download__item">
+              <a class="page-download__link" href="#" title="Google Play"><img src="img/android-logo.svg" alt="Android" width="43" height="47" title="Android"></a>
             </li>
-            <li class="main-nav__item">
-              <a href="form.html">КОНКУРС</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML ACADEMY</a>
+            <li class="page-download__item">
+              <a class="page-download__link" href="#" title="Microsoft Store"><img src="img/microsoft-logo.svg" alt="Microsoft" width="44" height="41" title="Microsoft"></a>
             </li>
           </ul>
+          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </nav>
+      </section>
     </header>
     <main class="page-main">
-        <section class="download">
-          <div class="download__wrapper">
-            <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-            <a href="#" class="button download__button">Скачать приложение</a>
-            <ul class="download__list">
-              <li class="download__item">
-                <a class="download__link" href="#" title="Apple Store"><img src="img/apple-logo.svg" alt="Apple" width="47" height="56" title="Apple"></a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="#" title="Google Play"><img src="img/android-logo.svg" alt="Android" width="43" height="47" title="Android"></a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="#" title="Microsoft Store"><img src="img/microsoft-logo.svg" alt="Microsoft" width="44" height="41" title="Microsoft"></a>
-              </li>
-            </ul>
-            <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-        </section>
         <section class="information">
             <h2 class="information__title">
               <span>Устали от серости мегаполиса?</span>
@@ -226,5 +231,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
